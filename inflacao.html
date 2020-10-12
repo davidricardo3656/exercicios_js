@@ -1,0 +1,82 @@
+<meta charset="UTF-8">
+
+<script>
+	
+	function pulaLinha() {
+
+		document.write("<br>");	
+		document.write("<br>");	
+	}
+
+	function mostra(frase) {
+
+		document.write(frase);
+		pulaLinha();
+	}
+
+
+
+    alert ("Vamos obter algumas informações sobre a inflação de alguns alimentos no período de 24 a 30 de Abril")
+
+    var produto1 = prompt("Diga o nome do produto");
+    var produto1Dia24 = prompt("Diga o preço do " + produto1 + " no dia 24 de Abril");
+    var produto1Dia30 = prompt("Diga o preço do " + produto1 + " no dia 30 de Abril");
+    var diferencaProduto1 = (produto1Dia30-produto1Dia24);
+    var percentualProduto1 = (100*diferencaProduto1)/produto1Dia24;
+    var estimativainflacionalDiaria1 = (diferencaProduto1/6);
+    
+
+    var produto2 = prompt("Diga o nome do produto");
+    var produto2Dia24 = prompt("Diga o preço do " + produto2 + " no dia 24 de Abril");
+    var produto2Dia30 = prompt("Diga o preço do " + produto2 + " no dia 30 de Abril");
+    var diferencaProduto2 = (produto2Dia30-produto2Dia24);
+    var percentualProduto2 = (100*diferencaProduto2)/produto2Dia24;
+    var estimativainflacionalDiaria2 = (diferencaProduto2/6);
+
+    var produto3 = prompt("Diga o nome do produto");
+    var produto3Dia24 = prompt("Diga o preço do " + produto3 + " no dia 24 de Abril");
+    var produto3Dia30 = prompt("Diga o preço do " + produto3 + " no dia 30 de Abril");
+    var diferencaProduto3 = (produto3Dia30-produto3Dia24);
+    var percentualProduto3 = (100*diferencaProduto3)/produto3Dia24;
+    var estimativainflacionalDiaria3 = (diferencaProduto3/6)
+
+    var inflacaoReal = (diferencaProduto1+diferencaProduto2+diferencaProduto3);
+    var inflacaoPercentual = (percentualProduto1+percentualProduto2+percentualProduto3);
+
+    mostra("<h1>Valores em real e percentual da Inflação dos seguintes produtos: " + produto1 + ", " + produto2 + " e " + produto3 +     " no período de 24 a 30 de Abril</h1>");
+
+    mostra("No período de 24 a 30 Abril o " + produto1 + " teve um aumento de R$ " + diferencaProduto1 + " em comparação com o período");
+    pulaLinha;
+    mostra("Um aumento de " + percentualProduto1 + " %")
+    pulaLinha;
+    pulaLinha;
+
+    mostra("No período de 24 a 30 Abril o " + produto2 + " teve um aumento de R$ " + diferencaProduto2 + " em comparação com o período");
+    pulaLinha;
+    pulaLinha;
+    mostra("Um aumento de " + percentualProduto2 + " %")
+    pulaLinha;
+    pulaLinha;
+
+    mostra("No período de 24 a 30 Abril o " + produto3 + " teve um aumento de R$ " + diferencaProduto3 + " em comparação com o período");
+    pulaLinha;
+    pulaLinha;
+    mostra("Um aumento de " + percentualProduto3 + " %")
+    pulaLinha;
+    pulaLinha;
+
+    mostra("<h1>A inflação média de todos esses produtos somam: " + " R$ " + inflacaoReal + " ao todo um aumento de " + inflacaoPercentual + " % </h1>" );
+    pulaLinha
+    pulaLinha
+
+    mostra("<h1> A estimativa de aumento diário para cada um dos alimentos é de:</h1>")
+    pulaLinha
+    mostra(produto1 + ": " + estimativainflacionalDiaria1 + " R$");
+    pulaLinha
+    mostra(produto2 + ": " + estimativainflacionalDiaria2 + " R$");
+    pulaLinha
+    mostra(produto3 + ": " + estimativainflacionalDiaria3 + " R$");
+
+
+
+</script>

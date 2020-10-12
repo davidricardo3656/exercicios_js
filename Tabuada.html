@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var multiplicador1 = 1;
+    
+    while(multiplicador1 <= 10){
+    mostra(7 * multiplicador1);
+    multiplicador1 = multiplicador1 + 1;
+    }
+    
+    mostra("FIM")
+
+    for (var multiplicador = 1; multiplicador <= 10; multiplicador = multiplicador++) {
+        mostra (8 * multiplicador);
+    }
+
+    mostra("FIM");
+
+</script>

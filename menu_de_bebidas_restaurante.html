@@ -1,0 +1,47 @@
+<meta charset="UTF-8">
+
+<script>
+	
+	function pulaLinha() {
+
+		document.write("<br>");	
+		document.write("<br>");	
+	}
+
+	function mostra(frase) {
+
+		document.write(frase);
+		pulaLinha();
+	}
+
+    function menu (a, b, c) {
+
+    var refrigerante = 1;
+    var suco = 2;
+    var agua = 3;
+    var bebidaEscolhida;
+
+    bebidaEscolhida = parseInt(prompt("Selecione um número para uma das bebidas: 1-Refrigerante, 2-Suco, 3-Água"));
+
+    if(bebidaEscolhida == 1){
+        mostra("<h1>1-Refrigerante</h1>")
+    }
+
+    if(bebidaEscolhida == 2){
+        mostra("<h1>2-Suco</h1>")
+    }
+
+    if(bebidaEscolhida == 3){
+        mostra("<h1>3-Água</h1>")
+    }
+
+    }
+
+    menu();
+
+
+
+	
+
+    
+</script>

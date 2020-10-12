@@ -1,0 +1,43 @@
+<meta charset="UTF-8">
+
+<script>
+	
+	function pulaLinha() {
+
+		document.write("<br>");	
+		document.write("<br>");	
+	}
+
+	function mostra(frase) {
+
+		document.write(frase);
+		pulaLinha();
+	}
+
+    function sinalizacao (verde, amarelo, vermelho){
+
+        var verde = "verde";
+        var amarelo = "amarelo";
+        var vermelho = "vermelho";
+        var cor;
+
+        cor = prompt("Qual é a cor do semáforo? verde, amarelo ou vermelho?")
+
+        if (cor == "verde"){
+            mostra("Pode passar...")
+        }
+
+        if (cor == "amarelo"){
+            mostra("Melhor diminuir a velocidade.")
+        }
+
+        if (cor == "vermelho"){
+            mostra("Pare agora mesmo!")
+        
+        } 
+
+    }
+
+    sinalizacao();
+    
+</script>

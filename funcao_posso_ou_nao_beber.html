@@ -1,0 +1,40 @@
+<meta charset="UTF-8">
+
+<script>
+	
+	function pulaLinha() {
+
+		document.write("<br>");	
+		document.write("<br>");	
+	}
+
+	function mostra(frase) {
+
+		document.write(frase);
+		pulaLinha();
+	}
+
+    function dirigir (idadeMotorista){
+        idadeMotorista = prompt("Qual é a sua idade?")
+        idadeparaDirigir = 18;
+        faltam = idadeparaDirigir - idadeMotorista;
+
+        if (idadeMotorista >= 18){
+            mostra ("Você pode dirigir!")
+        } else {
+            mostra ("Você NÃO pode dirigir!");
+            pulaLinha;
+            mostra ("Aguarde mais " + faltam + " ano(s)");
+            pulaLinha;
+            pulaLinha;
+            mostra("NÃO SE ESQUEÇA DE TIRAR A SUA HABILITAÇÃO, OK?");
+        }
+
+    }
+
+    dirigir();
+
+	
+
+    
+</script>

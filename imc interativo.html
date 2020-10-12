@@ -1,0 +1,42 @@
+<meta charset="UTF-8">
+
+<script>
+	
+	function pulaLinha() {
+
+		document.write("<br>");	
+		document.write("<br>");	
+	}
+
+	function mostra(frase) {
+
+		document.write(frase);
+		pulaLinha();
+	}
+
+	function calculaimc(altura, peso) {
+		return peso / (altura*altura);
+	}
+
+	nome = prompt ("Qual é o seu nome?");
+	alturaInformada = prompt ("Informe sua altura " + nome);
+	pesoInformado = prompt ("Informe seu peso " + nome);
+
+	var imc = calculaimc(alturaInformada, pesoInformado);
+
+	mostra(nome + " , o seu IMC é: " + calculaimc(alturaInformada, pesoInformado));
+
+	if (imc > 35) {
+		mostra("Seu IMC está acima da média recomendada pela OMS");
+	}
+
+	if(imc < 18.5) {
+		mostra("Seu IMC está abaixo da média recomendada pela OMS");
+	}
+
+	if(imc >= 18.5 && imc <= 35) {
+
+		mostra("Seu IMC está dentro da média recomendada pela OMS");
+
+	}
+</script>

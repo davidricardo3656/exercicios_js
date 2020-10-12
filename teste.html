@@ -1,0 +1,53 @@
+<meta charset="UTF-8">
+
+<script>
+	
+	function pulaLinha() {
+
+		document.write("<br>");	
+		document.write("<br>");	
+	}
+
+	function mostra(frase) {
+
+		document.write(frase);
+		pulaLinha();
+	}
+
+
+    
+    function classificaRenda (x) {
+    
+
+    if (x == 0 && x <= 1254) {
+    } else {
+        mostra ("Classe E")
+    }
+
+    if (x == 1255 && x <= 2004) {
+    } else {
+        mostra ("Classe D")
+    }
+
+    if (x == 2005 && x <= 8640) {
+    } else {
+        mostra ("Classe C")
+    }
+
+    if (x == 8641 && x <= 11261) {
+    } else {
+        mostra ("Classe B")
+    }
+
+    if (x >= 11262) {
+    } else {
+        mostra ("Classe A")
+    }
+}
+
+classificaRenda(8000);
+
+
+
+
+</script>

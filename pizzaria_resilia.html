@@ -1,0 +1,26 @@
+<meta charset="UTF-8">
+
+<script>
+
+	function pulaLinha() {
+
+		document.write("<br>");	
+		document.write("<br>");	
+	}
+
+	function mostra(frase) {
+
+		document.write(frase);
+		pulaLinha();
+	}
+
+    var saborPizza = prompt("Diga o sabor da pizza")
+    var custoPizza = parseInt(prompt("Digite quanto custam os materias usados na pizza de: " + saborPizza));
+    var valorVendaPizza = parseInt(prompt("Digite o valor em que a pizza é vendida"));
+    var valorBrutoPizza = valorVendaPizza;
+    var imposto = ((valorVendaPizza*8.9)/100)
+    var valorLiquidoPizza = valorBrutoPizza - custoPizza - imposto;
+
+    mostra ("Para a pizza de " + saborPizza + " , o lucro líquido é de R$ " + valorLiquidoPizza + " e o imposto é de " + imposto);
+        
+</script>

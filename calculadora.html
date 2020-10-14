@@ -1,0 +1,57 @@
+<meta charset="UTF-8">
+
+<script>
+
+function calculadora (num1, opeeracao, num2) {
+
+    var num1 = parseInt (prompt ("Qual é o primeiro número a ser operado?"))
+    
+    var operador = prompt ("Digite + para adicação; Digite - para subtração; Digite / para divisão; Digite * para multiplicação");
+
+    var num2 = parseInt (prompt ("Qual é o segundo número a ser operado?"));
+
+    var adicao = (num1 + num2);
+    var subtracao = (num1 - num2);
+    var divisao = (num1 / num2);
+    var multiplicacao = (num1 * num2);
+
+
+
+        while (operador == "+"){
+            document.write("O resultado da adição é " + adicao);
+            break
+            }
+
+        while (operador == "-"){
+            document.write("O resultado da subtração é " + subtracao);
+            break
+            }  
+   
+            
+        while (operador == "/" && num1 != 0){
+
+            document.write("O resultado da divisão é " + divisao);
+            break;
+            }            
+
+        if (divisao = (num1 == 0)){
+            alert("Null: Não existe divisão por 0")
+        }            
+            
+        while (operador == "*"){
+            document.write("O resultado da multiplicação é " + multiplicacao);
+            break
+            }     
+
+        if (operador != "+" && operador != "-" && operador != "*" && operador != "/" ){
+            alert("Null: Operador matemático inválido")
+        }
+
+        
+}
+
+
+calculadora();
+
+    
+</script>
